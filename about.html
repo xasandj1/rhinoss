@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+          <div class="tabscontainer">
+              <ul class="navs">
+                  <a href="index.html" class="header__navs"><img src="./assets/img/Logo rhino Png.png" alt=""
+                          class="header__logo">
+                  </a>
+                  <li class="header-nav"><a href="./about.html" class="header__navs">about us</a></li>
+                  <li class="header-nav"><a href="" class="header__navs">benefits</a></li>
+                  <li class="header-nav"><a href="" class="header__navs">roadmap</a></li>
+                  <li class="header-nav"><a href="" class="header__navs">faq</a></li>
+                </ul>
+                <div class="smallscreeen">
+                  <a href="" class="header__navs"><img src="./assets/img/Logo rhino Png.png" alt=""
+                          class="header__logo logo">
+                  </a>
+                  <div class="menu-btn"></div>
+              </div>
+              <div class="rhinos__flex">
+                <div class="aboutus__title">
+                  <div class="rihinos_paragraf">
+                  <h1 class="sector__text">Abou us</h1>
+                  <p class="sector__title">Royal Rhinos Club is a collection of 5,555 unique hand drawn NFTs. The main objective for us is to build Strong and ambitious community, club members will gain access to airdrops, private releases, exclusive merch collections and more. Besides that our team is working  to save the lives of Rhinos in wildlife, we will be donating a certain amount from minting proceeds. </p>
+                </div>
+              </div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/img/header.png" alt="" class="rhinos__width" style="width: 100%;"></div>
+                    <div class="swiper-slide"><img src="./assets/img/header.png" alt="" class="rhinos__width" style="width: 100%;"></div>
+                    <div class="swiper-slide"><img src="./assets/img/header.png" alt="" class="rhinos__width" style="width: 100%;"></div>
+                    <div class="swiper-slide"><img src="./assets/img/header.png" alt="" class="rhinos__width" style="width: 100%;"></div>
+                    <div class="swiper-slide"><img src="./assets/img/header.png" alt="" class="rhinos__width" style="width: 100%;"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+  </div>
+</header>
+<script>
+  let body = document.querySelector('body'),
+      link = document.querySelector('.header__navs'),
+      menu = document.querySelector('.menu-btn'),
+      list = document.querySelector('.navs');
+
+  // Navigation
+  menu.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      list.classList.toggle('active');
+  })
+</script>
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       effect: "cards",
+       grabCursor: true,
+     });
+   </script>
+  </body>
+</html>
